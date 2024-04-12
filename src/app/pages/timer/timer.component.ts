@@ -32,11 +32,9 @@ export class TimerComponent implements OnInit {
       takeUntilDestroyed(this.destroyRef),
       filter(() => this.running)
     ).subscribe(() => {
-      if (this.running) {
         this.timer$ = this.timer$.pipe(
-          map(timer => timer + 1)
+          map((timer: number) => timer + 1)
         );
-      }
     });
   }
 
