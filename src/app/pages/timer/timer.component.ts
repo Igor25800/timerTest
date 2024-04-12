@@ -56,7 +56,6 @@ export class TimerComponent implements OnInit {
   }
 
   resetTime(): void {
-    this.running = false;
     this.timer$ = of(0);
   }
 }
