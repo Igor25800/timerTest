@@ -1,0 +1,6 @@
+<div>
+  <h2>{{ timer$ | async | timeFormat }}</h2>
+  <button (click)="startStopTimer()">{{ running ? 'Stop' : 'Start' }}</button>
+  <button (click)="waitTimer()">Wait</button>
+  <button (click)="resetTime()">Reset</button>
+</div>
